@@ -1,0 +1,5 @@
+view,segment,customers,repeat_90d_pct,repeat_ever_pct
+all customers,total,76845,2.31,3.5
+by first-order delivery,first order late,5692,2.06,2.78
+by first-order delivery,first order not delivered yet,1504,2.79,3.99
+by first-order delivery,first order on time,69649,2.32,3.55

@@ -1,0 +1,11 @@
+# raw data comes from Kaggle (see README), not committed
+data/raw/*
+!data/raw/.gitkeep
+
+# generated database
+*.duckdb
+*.duckdb.wal
+
+__pycache__/
+.DS_Store
+.venv/
