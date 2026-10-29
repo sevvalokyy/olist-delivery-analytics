@@ -4,7 +4,9 @@ How do delivery times affect customer satisfaction on a marketplace, and where d
 
 This project takes ~100k real orders from **Olist**, a Brazilian e-commerce marketplace (2016–2018), builds a small data pipeline and star schema around them, and answers six business questions with SQL.
 
-**Stack:** Python (pandas) · DuckDB (SQL) · matplotlib
+**Stack:** Python (pandas) · DuckDB (SQL) · matplotlib · Chart.js
+
+**▶ [Interactive dashboard](https://sevvalokyy.github.io/olist-delivery-analytics/)** – late-rate trend with a state filter, seller quartiles and the regional view.
 
 ---
 
@@ -92,6 +94,7 @@ pip install -r requirements.txt
 python etl/load.py        # builds olist.duckdb
 python run_analyses.py    # runs sql/analysis/*.sql, writes results/
 python make_charts.py     # writes images/
+python make_dashboard.py  # writes docs/index.html (GitHub Pages)
 ```
 
 ## Limitations
@@ -102,5 +105,5 @@ python make_charts.py     # writes images/
 
 ## Next steps
 
-- Interactive dashboard (Tableau Public) for the seller scorecard and regional view.
+- Seller-level drill-down in the dashboard (individual seller scorecards).
 - Add seller–customer distance from the geolocation table to separate distance from seller behaviour.
